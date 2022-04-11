@@ -14,7 +14,7 @@ public class First{
         frame.setVisible(true);//Shows or hides the window/frame depending upon the parameter passed to it i.e (true/flase).
 
 //        You can set the image occuring in the top left of the frame by using the below code snippet.
-        ImageIcon image = new ImageIcon("./TimeTable.png");
+        ImageIcon image = new ImageIcon("TimeTable.png");
         frame.setIconImage(image.getImage()); //change the icon of the frame
     }
 }
