@@ -1,45 +1,20 @@
 package com.java.guiLearn;
-import javax.swing.*;  // Using Frame class in package java.awt
+import javax.swing.*;
 import java.awt.*;
-// A GUI program is written as a subclass of Frame - the top-level container
-// This subclass inherits all properties from Frame, e.g., title, icon, buttons, content-pane
-public class First {
 
+public class First{
     public static void main(String[] args) {
-        //Creating the Frame
-        JFrame frame = new JFrame("Chat Frame");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(400, 400);
+//        JFrame = a GUI window to add components in it
+        JFrame frame  = new JFrame();//Constructs a new frame that is initially invisible.
+        frame.setTitle("First Frame of Tutorial");//sets title of the frame
+        frame.setSize(420,420);//sets the size of x(width) and y(height) dimension(strictly follows order).
+        //        You can see that when we are closing the frame window then our program is not getting terminated so to make our program terinated automatically.
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//exit out application.
+        frame.setResizable(false);//stops the user to resize our frame by default it is resizable.
+        frame.setVisible(true);//Shows or hides the window/frame depending upon the parameter passed to it i.e (true/flase).
 
-        //Creating the MenuBar and adding components
-        JMenuBar mb = new JMenuBar();
-        JMenu m1 = new JMenu("FILE");
-        JMenu m2 = new JMenu("Help");
-        mb.add(m1);
-        mb.add(m2);
-        JMenuItem m11 = new JMenuItem("Open");
-        JMenuItem m22 = new JMenuItem("Save as");
-        m1.add(m11);
-        m1.add(m22);
-
-        //Creating the panel at bottom and adding components
-        JPanel panel = new JPanel(); // the panel is not visible in output
-        JLabel label = new JLabel("Enter Text");
-        JTextField tf = new JTextField(10); // accepts upto 10 characters
-        JButton send = new JButton("Send");
-        JButton reset = new JButton("Reset");
-        panel.add(label); // Components Added using Flow Layout
-        panel.add(tf);
-        panel.add(send);
-        panel.add(reset);
-
-        // Text Area at the Center
-        JTextArea ta = new JTextArea();
-
-        //Adding Components to the frame.
-        frame.getContentPane().add(BorderLayout.SOUTH, panel);
-        frame.getContentPane().add(BorderLayout.NORTH, mb);
-        frame.getContentPane().add(BorderLayout.CENTER, ta);
-        frame.setVisible(true);
+//        You can set the image occuring in the top left of the frame by using the below code snippet.
+        ImageIcon image = new ImageIcon("./TimeTable.png");
+        frame.setIconImage(image.getImage()); //change the icon of the frame
     }
 }
