@@ -3,7 +3,7 @@ import javax.swing.*;  // Using Frame class in package java.awt
 import java.awt.*;
 // A GUI program is written as a subclass of Frame - the top-level container
 // This subclass inherits all properties from Frame, e.g., title, icon, buttons, content-pane
-public class LearningGui {
+public class First {
 
     public static void main(String[] args) {
         //Creating the Frame
