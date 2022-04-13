@@ -38,11 +38,12 @@ JLabel label;
     public void actionPerformed(ActionEvent e) {
      if(e.getSource()== btn)
      {
-         System.out.println("HI JIHIHIHIHIHIHIHIHIHIH!!!");
+         System.out.println("HI Buttons!!!");
          label.setVisible(true);
      }
     }
     public static void main(String[] args) {
-     new Fifth();
+
+        new Fifth();
     }
 }
