@@ -5,7 +5,6 @@ import java.awt.event.*;
 
 public class Nineth {
     public static void main(String[] args) {
-
         NinethLaunch launchPage = new NinethLaunch();
     }
 }
