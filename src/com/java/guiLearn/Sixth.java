@@ -1,7 +1,6 @@
 package com.java.guiLearn;
 import javax.swing.*;
 import java.awt.*;
-
 public class Sixth {
     public static void main(String[] args) {
 //        BorderLayout: It is used to place components i.e panels in 5 areas in a frame
