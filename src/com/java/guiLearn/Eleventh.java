@@ -3,12 +3,7 @@
 //import java.awt.*;
 //import java.awt.event.*;
 //public class Eleventh implements ActionListener{
-//    JButton button = new JButton("Submit");
-//    Eleventh()
-//    {
-//        //        Now adding the button which will check that you have checked the check box or not
-//        button.addActionListener(this);
-//    }
+//
 //    public static void main(String[] args) {
 //        JFrame frame = new JFrame();
 //        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -18,6 +13,8 @@
 //        checkBox.setText("Above 18");
 ////        remove the border around the checkbox
 //        checkBox.setFocusable(false);
+//        JButton button = new JButton("Submit");
+//        button.addActionListener(ActionListener l);
 ////        set the font of the checkbox
 //        checkBox.setFont(new Font("Consolas",Font.BOLD,25));
 //        frame.add(checkBox);
