@@ -17,6 +17,7 @@ public class Fourth {
         JPanel panel2 = new JPanel();
         JPanel footerPanel = new JPanel();
 
+        panel1.setLayout(new GridLayout(1,4,10,10));
         panel1.setBackground(Color.RED);
         panel2.setBackground(Color.CYAN);
         footerPanel.setBackground(Color.GREEN);
