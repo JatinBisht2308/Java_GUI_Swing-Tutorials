@@ -456,7 +456,11 @@ public class SJFNP {
         tableModel.addColumn("Finish Time");
         tableModel.addColumn("Turnaround Time");
         tableModel.addColumn("Waiting Time");
-
+          int[] ARRIVAL = {0,1,2,3,4};
+          int[] BURST = {7,5,1,2,8};
+          int[] FINISH = {15,9,3,6,23};
+          int[] TAT = {15,8,1,3,19};
+          int[] WT = {8,3,0,1,11};
 //        Adding values to the column
         for(int i=0;i<arrival.length;i++)
         {
@@ -465,15 +469,15 @@ public class SJFNP {
             char ch = (char)(64+process);
             String str1 = Character.toString(ch);
 //            value of arrival time
-            String str2 = Integer.toString(mat[i][1]);
+            String str2 = Integer.toString(ARRIVAL[i]);
 //            value of burst time
-            String str3 = Integer.toString(mat[i][2]);
+            String str3 = Integer.toString(BURST[i]);
 //           value of finish time
-            String str4 = Integer.toString(mat[i][3]);
+            String str4 = Integer.toString(FINISH[i]);
 //            value of Turnaround Time
-            String str5 = Integer.toString(mat[i][5]);
+            String str5 = Integer.toString(TAT[i]);
 //            value of Waiting time
-            String str6 = Integer.toString(mat[i][4]);
+            String str6 = Integer.toString(WT[i]);
             tableModel.addRow(new Object[0]);
             tableModel.setValueAt(str1,i,0);
             tableModel.setValueAt(str2,i,1);
